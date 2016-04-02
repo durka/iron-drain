@@ -1,6 +1,6 @@
 [package]
 name = "iron-drain"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Alex Burka <aburka@seas.upenn.edu>"]
 
 description = "Iron middleware that makes sure requests are read in full before reusing sockets"

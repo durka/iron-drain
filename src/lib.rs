@@ -13,9 +13,11 @@
 //!
 //! ```rust
 //! extern crate iron;
+//! extern crate iron_drain;
 //!
 //! use iron::prelude::*;
 //! use iron::status;
+//! use iron_drain::Drain;
 //!
 //! # fn main() {
 //! let mut srv = Chain::new(|_: &mut Request| {
@@ -23,7 +25,7 @@
 //! });
 //! srv.link_after(Drain::new());
 //! # || {
-//! srv.http("localhost:3000").unwrap();
+//! Iron::new(srv).http("localhost:3000").unwrap();
 //! # };
 //! # }
 //! ```
