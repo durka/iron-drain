@@ -1,0 +1,15 @@
+[package]
+name = "iron-drain"
+version = "0.1.0"
+authors = ["Alex Burka <aburka@seas.upenn.edu>"]
+
+description = "Iron middleware that makes sure requests are read in full before reusing sockets"
+homepage = "https://github.com/durka/iron-drain"
+repository = "https://github.com/durka/iron-drain"
+readme = "README.md"
+license = "MIT"
+keywords = ["iron", "drain", "request"]
+
+[dependencies]
+iron = "0.3.0"
+
